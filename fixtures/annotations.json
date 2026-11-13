@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "file": "cards.html",
+      "template": "list",
+      "labels": [
+        {
+          "field": "price",
+          "record": "//*[@data-sku=\"A\"]",
+          "positive": ".//strong",
+          "negative": [
+            ".//del"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "detail.html",
+      "template": "detail",
+      "labels": [
+        {
+          "field": "price",
+          "record": "//main",
+          "positive": ".//*[@data-price=\"current\"]",
+          "negative": [
+            ".//aside"
+          ]
+        }
+      ]
+    }
+  ]
+}
